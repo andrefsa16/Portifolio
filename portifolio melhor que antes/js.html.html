@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Montserrat:ital,wght@0,300;1,200&family=Raleway:wght@300&family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+<title>Document</title>
+<style type="text/css">
+
+
+*
+{
+margin: 0px;
+box-sizing: border-box;
+}
+
+html, body 
+{
+width: 100%;
+height: 100%;
+}
+
+body
+{
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url("imagem/imagemfundo.avif")
+}
+
+input
+{
+width: 200px;
+}
+
+.div{
+border-radius: 10px;
+border: 1px solid black;
+
+display: flex;
+flex-direction: column;
+
+width: 270px;
+height: 270px;
+}
+
+.div2{
+background-color: gray;
+color: aliceblue;
+}
+
+form
+{
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+</style>
+
+<script type="text/javascript">
+ function funcaoteste()
+{
+var a = document.getElementById("TesteTeste").value;
+var b = document.getElementById("TesteTeste2").value;
+
+if ( a == 'usuario' & b == 123)
+{
+alert('Sucesso!');
+}
+
+else
+{
+alert('Falha!');
+}
+
+return false;
+
+
+}    
+
+
+
+
+
+
+</script>
+
+
+</head>
+<body>
+<!-- Conteúdo -->
+<form class="div">
+
+<h1 style="font-family: Montserrat;">LOGIN</h1>
+
+<p style="font-family: Montserrat;">Usuario:</p>
+<input type="text" placeholder="Usuario" id="TesteTeste">
+
+<p style="font-family: Montserrat;">Senha:</p>
+<input type="password" placeholder="Senha" id="TesteTeste2">
+ 
+<button onclick="funcaoteste()"> enviar </button>
+
+</form>
+
+</body>
+</html>
